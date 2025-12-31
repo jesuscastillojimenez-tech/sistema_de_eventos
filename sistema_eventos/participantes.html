@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Participantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/participantes.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">EventosTech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registrar Participante</a></li>
+                <li><a href="participantes.html" class="active">Ver Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="evento-info">
+            <div class="evento-header">
+                <h1>Conferencia Python 2025</h1>
+                <span class="badge">Tecnología</span>
+            </div>
+            <div class="contadores">
+                <div class="contador-card">
+                    <span class="num">128</span><span class="lbl">Asistentes</span>
+                </div>
+                <div class="contador-card">
+                    <span class="num">12</span><span class="lbl">Ponentes</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="tabs-container">
+            
+            <input type="radio" id="tab1" name="grupo-tabs" checked>
+            <input type="radio" id="tab2" name="grupo-tabs">
+            <input type="radio" id="tab3" name="grupo-tabs">
+
+            <div class="tabs-nav">
+                <label for="tab1" class="tab-label">👥 Asistentes</label>
+                <label for="tab2" class="tab-label">🎤 Ponentes</label>
+                <label for="tab3" class="tab-label">📊 Estadísticas</label>
+            </div>
+
+            <div class="tabs-content">
+                
+                <div class="content-box content-1">
+                    <div class="tabla-responsive">
+                        <table class="tabla-participantes">
+                            <thead>
+                                <tr>
+                                    <th>Participante</th>
+                                    <th>Empresa</th>
+                                    <th>Nivel</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ana García</strong><br><small>ana@mail.com</small></td>
+                                    <td>TechSolutions</td>
+                                    <td><span class="tag tag-jr">Junior</span></td>
+                                    <td>CDMX</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Carlos López</strong><br><small>carlos@dev.io</small></td>
+                                    <td>Freelance</td>
+                                    <td><span class="tag tag-sr">Senior</span></td>
+                                    <td>Guadalajara</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>María Rodriguez</strong><br><small>mrod@banco.com</small></td>
+                                    <td>Banco Nacional</td>
+                                    <td><span class="tag tag-mid">Mid</span></td>
+                                    <td>Monterrey</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Roberto Díaz</strong><br><small>rob@startup.com</small></td>
+                                    <td>InnovaSoft</td>
+                                    <td><span class="tag tag-jr">Junior</span></td>
+                                    <td>CDMX</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lucía Méndez</strong><br><small>lucia@design.com</small></td>
+                                    <td>Estudio Creativo</td>
+                                    <td><span class="tag tag-mid">Mid</span></td>
+                                    <td>Querétaro</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fernando Torres</strong><br><small>fer@torres.com</small></td>
+                                    <td>Consultora X</td>
+                                    <td><span class="tag tag-sr">Senior</span></td>
+                                    <td>Remoto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Patricia Vega</strong><br><small>paty@web.net</small></td>
+                                    <td>Agencia Digital</td>
+                                    <td><span class="tag tag-mid">Mid</span></td>
+                                    <td>Mérida</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Jorge Campos</strong><br><small>jorge@uni.edu</small></td>
+                                    <td>Universidad Tech</td>
+                                    <td><span class="tag tag-jr">Junior</span></td>
+                                    <td>Puebla</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Elena White</strong><br><small>elena@global.com</small></td>
+                                    <td>Global Systems</td>
+                                    <td><span class="tag tag-sr">Senior</span></td>
+                                    <td>CDMX</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Daniel Sosa</strong><br><small>dani@code.org</small></td>
+                                    <td>Code Academy</td>
+                                    <td><span class="tag tag-jr">Junior</span></td>
+                                    <td>Online</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-box content-2">
+                    <div class="grid-ponentes">
+                        <div class="ponente-card">
+                            <h3>Juan Silva</h3>
+                            <p><strong>Tema:</strong> IA Generativa</p>
+                            <p class="bio">Investigador de IA con 10 años de experiencia.</p>
+                        </div>
+                        <div class="ponente-card">
+                            <h3>Elena Limón</h3>
+                            <p><strong>Tema:</strong> Seguridad Financiera</p>
+                            <p class="bio">Experta en ciberseguridad para banca.</p>
+                        </div>
+                        <div class="ponente-card">
+                            <h3>Miguel Paz</h3>
+                            <p><strong>Tema:</strong> Docker y Kubernetes</p>
+                            <p class="bio">Arquitecto de nube certificado en AWS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box content-3">
+                    <div class="stats-grid">
+                        <div class="chart-card">
+                            <h3>Nivel de Experiencia</h3>
+                            <div class="bar-chart">
+                                <div class="bar-row">
+                                    <span class="label">Junior</span>
+                                    <div class="bar-container"><div class="bar-fill" style="width: 45%;">45%</div></div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="label">Mid</span>
+                                    <div class="bar-container"><div class="bar-fill" style="width: 30%;">30%</div></div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="label">Senior</span>
+                                    <div class="bar-container"><div class="bar-fill" style="width: 25%;">25%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-card">
+                            <h3>Top Ciudades</h3>
+                            <ul class="lista-stats">
+                                <li><span>CDMX</span> <span class="badge">60%</span></li>
+                                <li><span>Guadalajara</span> <span class="badge">25%</span></li>
+                                <li><span>Monterrey</span> <span class="badge">15%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión de Eventos</p>
+    </footer>
+</body>
+</html>

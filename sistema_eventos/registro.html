@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - EventosTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">EventosTech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html" class="active">Registrar Participante</a></li>
+                <li><a href="participantes.html">Ver Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Registro al Evento</h2>
+                <p>Completa el formulario para reservar tu lugar.</p>
+            </div>
+
+            <form action="participantes.html">
+                
+                <div class="form-group">
+                    <label for="evento">Selecciona el Evento:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">-- Elige una opción --</option>
+                        <option value="python">Conferencia Python 2025</option>
+                        <option value="web">Workshop Desarrollo Web</option>
+                        <option value="startup">Startup Summit</option>
+                    </select>
+                </div>
+
+                <div class="form-group tipo-selector">
+                    <p class="label-text">Tipo de registro:</p>
+                    <div class="radio-group">
+                        <label class="radio-card asistente">
+                            <input type="radio" name="tipo" value="asistente" checked>
+                            <span class="radio-title">Asistente</span>
+                        </label>
+                        <label class="radio-card ponente">
+                            <input type="radio" name="tipo" value="ponente">
+                            <span class="radio-title">Ponente</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="seccion-comun">
+                    <div class="grid-2-col">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Corporativo *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa / Institución *</label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </div>
+                </div>
+
+                <fieldset class="campos-extra asistente-box">
+                    <legend>Información para Asistentes</legend>
+                    <div class="form-group">
+                        <label>Nivel de experiencia:</label>
+                        <select>
+                            <option value="jr">Junior</option>
+                            <option value="mid">Mid-Level</option>
+                            <option value="sr">Senior</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-simple">
+                        <label><input type="checkbox" name="certificado"> ¿Requiere certificado?</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="campos-extra ponente-box">
+                    <legend>Información para Ponentes</legend>
+                    <div class="form-group">
+                        <label>Título de la Ponencia</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Biografía</label>
+                        <textarea rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión de Eventos</p>
+    </footer>
+</body>
+</html>

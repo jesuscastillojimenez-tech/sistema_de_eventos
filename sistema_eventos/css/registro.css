@@ -1,0 +1,32 @@
+.form-container { background: var(--white); max-width: 700px; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; }
+.form-header { background: var(--text-dark); color: var(--white); padding: 2rem; text-align: center; }
+form { padding: 2rem; }
+
+.form-group { margin-bottom: 1.2rem; }
+.grid-2-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+
+input, select, textarea { width: 100%; padding: 0.8rem; border: 2px solid #e5e7eb; border-radius: 6px; transition: 0.3s; }
+input:focus, select:focus { border-color: var(--primary-color); outline: none; }
+
+/* Validación Visual */
+input:required:valid, select:required:valid { border-color: #10b981; }
+input:required:focus:invalid, select:required:focus:invalid { border-color: var(--color-error); }
+
+/* Selector Tipo */
+.tipo-selector { margin: 2rem 0; }
+.radio-group { display: flex; gap: 1rem; }
+.radio-card { flex: 1; border: 2px solid #e5e7eb; border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; position: relative; }
+.radio-card input { position: absolute; opacity: 0; }
+.radio-card.asistente:has(input:checked) { border-color: var(--color-asistente); background: rgba(16, 185, 129, 0.1); color: var(--color-asistente); }
+.radio-card.ponente:has(input:checked) { border-color: var(--color-ponente); background: rgba(139, 92, 246, 0.1); color: var(--color-ponente); }
+
+/* Fieldsets */
+fieldset { border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; background: #f9fafb; }
+.asistente-box { border-top: 3px solid var(--color-asistente); }
+.ponente-box { border-top: 3px solid var(--color-ponente); }
+
+.form-actions { display: flex; gap: 1rem; margin-top: 2rem; }
+.form-actions .btn { flex: 1; }
+
+@media (max-width: 600px) { .grid-2-col { grid-template-columns: 1fr; } }

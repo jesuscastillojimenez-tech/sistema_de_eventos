@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Eventos - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eventos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">EventosTech</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="registro.html">Registrar Participante</a></li>
+                <li><a href="participantes.html">Ver Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Próximos Eventos</h1>
+        
+        <section class="filtros-section">
+            <div class="input-group">
+                <input type="text" placeholder="🔍 Buscar evento...">
+            </div>
+            <div class="input-group">
+                <select>
+                    <option value="">Todas las categorías</option>
+                    <option value="tech">Tecnología</option>
+                    <option value="taller">Talleres</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <select>
+                    <option value="recientes">Más recientes</option>
+                    <option value="participantes">Más populares</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="eventos-grid">
+            <article class="evento-card">
+                <div class="card-header categoria-tech">
+                    <span class="badge">Tecnología</span>
+                    <h3>Conferencia Python 2025</h3>
+                </div>
+                <div class="card-body">
+                    <div class="meta-info">
+                        <p><strong>📅 Fecha:</strong> 15 Oct, 09:00 AM</p>
+                        <p><strong>📍 Lugar:</strong> Auditorio Nacional</p>
+                    </div>
+                    <p class="descripcion">Descubre las novedades de Python y su uso en IA y Ciencia de Datos.</p>
+                    <div class="estadisticas">
+                        <div class="stat"><span class="numero">120</span><span class="label">Asistentes</span></div>
+                        <div class="stat"><span class="numero">8</span><span class="label">Ponentes</span></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline">Detalles</button>
+                    <a href="registro.html" class="btn btn-primary">Registrar</a>
+                    <a href="participantes.html" class="btn btn-secondary">Ver Lista</a>
+                </div>
+            </article>
+
+            <article class="evento-card">
+                <div class="card-header categoria-taller">
+                    <span class="badge">Taller</span>
+                    <h3>Workshop Web Dev</h3>
+                </div>
+                <div class="card-body">
+                    <div class="meta-info">
+                        <p><strong>📅 Fecha:</strong> 20 Oct, 10:00 AM</p>
+                        <p><strong>📍 Lugar:</strong> Centro Tech</p>
+                    </div>
+                    <p class="descripcion">Aprende a construir sitios responsivos desde cero con HTML5 y CSS3.</p>
+                    <div class="estadisticas">
+                        <div class="stat"><span class="numero">45</span><span class="label">Asistentes</span></div>
+                        <div class="stat"><span class="numero">2</span><span class="label">Ponentes</span></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline">Detalles</button>
+                    <a href="registro.html" class="btn btn-primary">Registrar</a>
+                    <a href="participantes.html" class="btn btn-secondary">Ver Lista</a>
+                </div>
+            </article>
+
+            <article class="evento-card">
+                <div class="card-header categoria-negocios">
+                    <span class="badge">Negocios</span>
+                    <h3>Startup Summit</h3>
+                </div>
+                <div class="card-body">
+                    <div class="meta-info">
+                        <p><strong>📅 Fecha:</strong> 05 Nov, 08:30 AM</p>
+                        <p><strong>📍 Lugar:</strong> Hotel Reforma</p>
+                    </div>
+                    <p class="descripcion">Conecta con inversionistas y emprendedores líderes.</p>
+                    <div class="estadisticas">
+                        <div class="stat"><span class="numero">200</span><span class="label">Asistentes</span></div>
+                        <div class="stat"><span class="numero">15</span><span class="label">Ponentes</span></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline">Detalles</button>
+                    <a href="registro.html" class="btn btn-primary">Registrar</a>
+                    <a href="participantes.html" class="btn btn-secondary">Ver Lista</a>
+                </div>
+            </article>
+
+            <article class="evento-card">
+                <div class="card-header categoria-tech">
+                    <span class="badge">Ciberseguridad</span>
+                    <h3>Hacking Ético</h3>
+                </div>
+                <div class="card-body">
+                    <div class="meta-info">
+                        <p><strong>📅 Fecha:</strong> 12 Nov, 04:00 PM</p>
+                        <p><strong>📍 Lugar:</strong> Online</p>
+                    </div>
+                    <p class="descripcion">Introducción a pruebas de penetración y seguridad web.</p>
+                    <div class="estadisticas">
+                        <div class="stat"><span class="numero">80</span><span class="label">Asistentes</span></div>
+                        <div class="stat"><span class="numero">3</span><span class="label">Ponentes</span></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline">Detalles</button>
+                    <a href="registro.html" class="btn btn-primary">Registrar</a>
+                    <a href="participantes.html" class="btn btn-secondary">Ver Lista</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión de Eventos</p>
+    </footer>
+</body>
+</html>
