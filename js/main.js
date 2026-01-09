@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // LÓGICA DE LISTADO (Participantes)
+    // LÓGICA DE LISTADO Participantes
     const tablaCuerpo = document.getElementById('tabla-body-asistentes');
     const gridCuerpo = document.getElementById('grid-ponentes-container');
 
@@ -117,8 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 if(tablaCuerpo) tablaCuerpo.innerHTML += filaHTML;
                 
-                // --- CORRECCIÓN IMPORTANTE AQUÍ ---
-                // Simplemente sumamos directo, sin preguntar "if"
+                
                 if (stats.hasOwnProperty(persona.nivel)) {
                     stats[persona.nivel]++;
                 }

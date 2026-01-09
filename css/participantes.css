@@ -4,7 +4,7 @@
 .contador-card .num { display: block; font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
 .contador-card .lbl { font-size: 0.8rem; text-transform: uppercase; }
 
-/* Sistema de Pestañas (CORE) */
+/* Sistema de Pestañas */
 .tabs-container { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); overflow: hidden; min-height: 500px; }
 input[name="grupo-tabs"] { display: none; }
 
@@ -48,7 +48,7 @@ input[name="grupo-tabs"] { display: none; }
 .bar-row .label { width: 60px; font-weight: bold; font-size: 0.9rem; }
 .bar-container { flex: 1; background: #f3f4f6; height: 20px; border-radius: 10px; overflow: hidden; }
 
-/* --- AQUÍ AGREGUÉ LA TRANSICIÓN --- */
+/* --- TRANSICIÓN --- */
 .bar-fill { 
     height: 100%; 
     background: var(--primary-color); 

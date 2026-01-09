@@ -63,7 +63,7 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* --- Validación Visual (Feedback) --- */
+/* --- Validación Visual --- */
 input:required:valid, select:required:valid {
     border-color: #10b981;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='18px' height='18px'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
@@ -75,7 +75,7 @@ input:required:focus:invalid, select:required:focus:invalid {
     border-color: var(--color-error);
 }
 
-/* --- Selector de Tipo de Usuario (Radio Cards) --- */
+/* --- Selector de Tipo de Usuario --- */
 .tipo-selector {
     margin: 2rem 0;
 }
@@ -118,7 +118,7 @@ input:required:focus:invalid, select:required:focus:invalid {
     color: var(--color-ponente);
 }
 
-/* --- Fieldsets (Cajas específicas) --- */
+/* --- Fieldset --- */
 fieldset {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
