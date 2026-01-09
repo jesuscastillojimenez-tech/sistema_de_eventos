@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - EventosTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventosTech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html" class="active">Registrar</a></li>
+                <li><a href="participantes.html">Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Registro al Evento</h2>
+                <p>Completa el formulario según tu rol.</p>
+            </div>
+
+            <form id="form-registro">
+                
+                <div class="form-group">
+                    <label>Selecciona el Evento:</label>
+                    <select name="evento" required>
+                        <option value="">-- Elige una opción --</option>
+                        <option value="python">Conferencia Python 2025</option>
+                        <option value="web">Workshop Web</option>
+                    </select>
+                </div>
+
+                <div class="form-group tipo-selector">
+                    <p class="label-text">¿Cómo vas a participar?</p>
+                    <div class="radio-group">
+                        <label class="radio-card asistente">
+                            <input type="radio" name="tipo" value="asistente" id="radio-asistente" checked>
+                            <span class="radio-title">Asistente</span>
+                        </label>
+                        <label class="radio-card ponente">
+                            <input type="radio" name="tipo" value="ponente" id="radio-ponente">
+                            <span class="radio-title">Ponente</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="seccion-comun">
+                    <div class="grid-2-col">
+                        <div class="form-group">
+                            <label>Nombre Completo *</label>
+                            <input type="text" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Corporativo *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="grid-2-col">
+                        <div class="form-group">
+                            <label>Empresa *</label>
+                            <input type="text" name="empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad</label>
+                            <input type="text" name="ciudad">
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset id="fieldset-asistente" class="campos-extra asistente-box">
+                    <legend>Info Asistentes</legend>
+                    <div class="form-group">
+                        <label>Nivel de Experiencia:</label>
+                        <select name="experiencia">
+                            <option value="jr">Junior</option>
+                            <option value="mid">Mid-Level</option>
+                            <option value="sr">Senior</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset id="fieldset-ponente" class="campos-extra ponente-box oculto">
+                    <legend>Info Ponentes</legend>
+                    <div class="form-group">
+                        <label>Tema de Especialidad</label>
+                        <input type="text" name="especialidad" placeholder="Ej. IA, UX/UI, Ciberseguridad">
+                    </div>
+                    <div class="form-group">
+                        <label>Link a LinkedIn / Portafolio</label>
+                        <input type="url" name="linkedin" placeholder="https://linkedin.com/in/tu-perfil">
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

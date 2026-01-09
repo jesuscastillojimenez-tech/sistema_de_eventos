@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f3f4f6;
+    --white: #ffffff;
+    --color-asistente: #10b981;
+    --color-ponente: #8b5cf6;
+    --color-error: #ef4444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+
+header { background-color: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+
+nav { max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; flex: 1; width: 100%; }
+
+footer { text-align: center; padding: 2rem; background-color: var(--text-dark); color: var(--white); margin-top: auto; }
+
+/* Botones Generales */
+.btn { padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; text-decoration: none; text-align: center; border: none; display: inline-block; }
+.btn-primary { background: var(--primary-color); color: white; }
+.btn-secondary { background: var(--text-dark); color: white; }
+.btn-outline { border: 1px solid var(--primary-color); color: var(--primary-color); background: transparent; }
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; gap: 1rem; }
+}

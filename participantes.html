@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participantes - Dinámico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/participantes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventosTech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registrar</a></li>
+                <li><a href="participantes.html" class="active">Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="evento-info">
+            <div class="evento-header">
+                <h1>Conferencia Python 2025</h1>
+                <span class="badge">Tecnología</span>
+            </div>
+        </section>
+
+        <div class="tabs-container">
+            <input type="radio" id="tab1" name="grupo-tabs" checked>
+            <input type="radio" id="tab2" name="grupo-tabs">
+            <input type="radio" id="tab3" name="grupo-tabs">
+
+            <div class="tabs-nav">
+                <label for="tab1" class="tab-label">👥 Asistentes</label>
+                <label for="tab2" class="tab-label">🎤 Ponentes</label>
+                <label for="tab3" class="tab-label">📊 Estadísticas</label>
+            </div>
+
+            <div class="tabs-content">
+                
+                <div class="content-box content-1">
+                    <div class="tabla-responsive">
+                        <table class="tabla-participantes">
+                            <thead>
+                                <tr>
+                                    <th>Participante</th>
+                                    <th>Empresa</th>
+                                    <th>Nivel</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-body-asistentes">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-box content-2">
+                    <div class="grid-ponentes" id="grid-ponentes-container">
+                        </div>
+                </div>
+
+                <div class="content-box content-3">
+                    <div class="stats-grid">
+                        <div class="chart-card">
+                            <h3>Nivel de Experiencia (En vivo)</h3>
+                            <div class="bar-chart">
+                                <div class="bar-row">
+                                    <span class="label">Junior</span>
+                                    <div class="bar-container"><div id="bar-jr" class="bar-fill" style="width: 0%;">0%</div></div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="label">Mid</span>
+                                    <div class="bar-container"><div id="bar-mid" class="bar-fill" style="width: 0%;">0%</div></div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="label">Senior</span>
+                                    <div class="bar-container"><div id="bar-sr" class="bar-fill" style="width: 0%;">0%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
